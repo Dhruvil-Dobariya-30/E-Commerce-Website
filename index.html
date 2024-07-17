@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+  </head>
+  <body>
+    <p>Login Page</p>
+
+    <input
+      type="email"
+      name="email"
+      id="loginEmail"
+      placeholder="Enter Email"
+    />
+    <input
+      type="password"
+      name="password"
+      id="loginPassword"
+      placeholder="Enter Password"
+    />
+
+    <button onclick="login()">Login Now</button>
+    <a href="././Reset-Password.html">Reset Pass</a>
+
+    <!-- <a href="./ForgotPassword.html">Forgot Password</a> -->
+    <script src="./signup.js"></script>
+    <script>
+      let loginEmail = document.getElementById("loginEmail");
+      let loginPassword = document.getElementById("loginPassword");
+
+      function login() {
+        if (loginEmail.value === "" || loginPassword.value === "") {
+          alert("Please fill in both email and password fields.");
+        } else if (
+          allData.find(
+            (e) =>
+              e.Email === loginEmail.value && e.Password === loginPassword.value
+          )
+        ) {
+          alert("Login successful!");
+        } else {
+          alert("Invalid email or password. Please try again.");
+        }
+      }
+    </script>
+  </body>
+</html>
