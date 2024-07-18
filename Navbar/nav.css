@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav-container {
+  background-color: aquamarine;
+}
+
+nav {
+  padding: 5px 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  gap: 30px;
+}
+
+.btns {
+  display: flex;
+  gap: 30px;
+}
+
+button {
+  padding: 5px 10px;
+  border: none;
+}

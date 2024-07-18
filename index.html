@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css">
     <title>Login Page</title>
   </head>
   <body>
@@ -21,29 +22,13 @@
       placeholder="Enter Password"
     />
 
-    <button onclick="login()">Login Now</button>
-    <a href="././Reset-Password.html">Reset Pass</a>
+    <button onclick="login()">Login Now</button><br />
+    <a href="./Reset-Password/Reset-Password.html">Reset Pass</a><br />
+    <a href="./SignUp/signUp.html">Create Account</a>
+    <a href="./Forgot-Password/ForgotPassword.html">Forgot Password</a>
 
     <!-- <a href="./ForgotPassword.html">Forgot Password</a> -->
-    <script src="./signup.js"></script>
-    <script>
-      let loginEmail = document.getElementById("loginEmail");
-      let loginPassword = document.getElementById("loginPassword");
-
-      function login() {
-        if (loginEmail.value === "" || loginPassword.value === "") {
-          alert("Please fill in both email and password fields.");
-        } else if (
-          allData.find(
-            (e) =>
-              e.Email === loginEmail.value && e.Password === loginPassword.value
-          )
-        ) {
-          alert("Login successful!");
-        } else {
-          alert("Invalid email or password. Please try again.");
-        }
-      }
-    </script>
+    <script src="./login.js"></script>
+    <script src="./data.js"></script>
   </body>
 </html>

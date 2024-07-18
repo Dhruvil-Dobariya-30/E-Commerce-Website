@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+#upper-div {
+  font-family: "Lato", sans-serif;
+  width: 100vw;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(
+    to right top,
+    #051937,
+    #004d7a,
+    #008793,
+    #00bf72,
+    #a8eb12
+  );
+}
+
+.upper-inner-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 60px;
+}
+
+span {
+  color: rgb(113, 234, 8);
+}
+
+#typed-text {
+  height: 200px;
+}
+
+.small-data {
+  color: white;
+  line-height: 30px;
+}
+
+.main-img img {
+  width: 500px;
+  height: 450px;
+  animation: cover-anime 4s infinite;
+}
+
+@keyframes cover-anime {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.upper-btns {
+  margin: 0 50px;
+}
+
+button {
+  margin: 10px;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+}
+
+.second-div {
+  background-color: aqua;
+}
+
+.header {
+  text-align: center;
+  padding: 15px;
+  background-color: #fff;
+}
+
+.categoryList {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 300px;
+}
+
+.one,
+.two,
+.three {
+  background-color: azure;
+  padding: 20px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  border-radius: 20%;
+}
+
+.categoryList img {
+  width: 200px;
+}
+
+.one:hover,
+.two:hover,
+.three:hover {
+  background-color: #8c9ea9;
+}
+
+.third-div {
+  background-color: #008793;
+}
+
+.bestProducts {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.items {
+  background-color: #fff;
+  margin: 20px 0;
+  padding: 25px 25px 5px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.items h3,
+p {
+  margin-bottom: 10px;
+}
+
+.bestProducts img {
+  width: 300px;
+  height: 280px;
+}
+
+.reviews {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.review {
+  background-color: #b0a7a7;
+  padding: 20px;
+}
