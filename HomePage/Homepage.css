@@ -129,8 +129,9 @@ p {
 }
 
 .bestProducts img {
-  width: 300px;
-  height: 280px;
+  width: 260px;
+  height: 230px;
+  margin: 20px 10px;
 }
 
 .reviews {

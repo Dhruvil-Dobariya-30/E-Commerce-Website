@@ -1,7 +1,8 @@
 let data = [
   {
     name: "Adidas Ultraboost 21",
-    image: "./",
+    image:
+      "https://m.media-amazon.com/images/I/414FfrsToBL._AC_UL480_FMwebp_QL65_.jpg",
     sizes: [7, 8, 9, 10, 11, 12],
     colors: ["Black", "White", "Blue"],
     brand: "Adidas",
@@ -14,7 +15,8 @@ let data = [
   },
   {
     name: "Adidas Stan Smith",
-    image: "./Images/shoes/adidas-2.png",
+    image:
+      "https://m.media-amazon.com/images/I/8169RvcpPKL._AC_UL480_FMwebp_QL65_.jpg",
     sizes: [6, 7, 8, 9, 10, 11],
     colors: ["White", "Green", "Navy"],
     brand: "Adidas",
@@ -27,7 +29,8 @@ let data = [
   },
   {
     name: "Adidas Superstar",
-    image: "./Images/shoes/adidas-3.png",
+    image:
+      "https://m.media-amazon.com/images/I/71YgZ+wVdQL._AC_UL480_FMwebp_QL65_.jpg",
     sizes: [6, 7, 8, 9, 10, 11],
     colors: ["White", "Black", "Red"],
     brand: "Adidas",
@@ -40,7 +43,8 @@ let data = [
   },
   {
     name: "Adidas Ultraboost 22",
-    image: "./Images/shoes/adidas-4.png",
+    image:
+      "https://m.media-amazon.com/images/I/61ILsOc77PL._AC_UL480_FMwebp_QL65_.jpg",
     sizes: [5, 6, 7, 8, 9, 10],
     colors: ["Pink", "White", "Grey"],
     brand: "Adidas",
@@ -53,7 +57,8 @@ let data = [
   },
   {
     name: "Adidas NMD R1",
-    image: "./Images/shoes/adidas-5.png",
+    image:
+      "https://m.media-amazon.com/images/I/61SNAIvsV7L._AC_UL480_FMwebp_QL65_.jpg",
     sizes: [7, 8, 9, 10, 11],
     colors: ["Black", "White", "Red"],
     brand: "Adidas",
@@ -66,7 +71,8 @@ let data = [
   },
   {
     name: "Adidas Gazelle",
-    image: "./Images/shoes/adidas-6.png",
+    image:
+      "https://m.media-amazon.com/images/I/71cseSM718L._AC_UL480_FMwebp_QL65_.jpg",
     sizes: [3, 4, 5, 6],
     colors: ["Blue", "Pink", "Black"],
     brand: "Adidas",
@@ -81,7 +87,8 @@ let data = [
   // Puma Shoes
   {
     name: "Puma RS-X",
-    image: "./Images/shoes/puma-1.png",
+    image:
+      "https://m.media-amazon.com/images/I/71uEBGZ+5HL._AC_UL480_FMwebp_QL65_.jpg",
     sizes: [7, 8, 9, 10, 11],
     colors: ["White", "Black", "Red"],
     brand: "Puma",
@@ -94,7 +101,8 @@ let data = [
   },
   {
     name: "Puma Cali",
-    image: "./Images/shoes/puma-2.png",
+    image:
+      "https://m.media-amazon.com/images/I/51V+htDvNjL._AC_UL480_FMwebp_QL65_.jpg",
     sizes: [5, 6, 7, 8, 9, 10],
     colors: ["White", "Black", "Pink"],
     brand: "Puma",
@@ -107,7 +115,8 @@ let data = [
   },
   {
     name: "Puma Suede Classic",
-    image: "./Images/shoes/puma-3.png",
+    image:
+      "https://m.media-amazon.com/images/I/618sUEIWr0L._AC_UL480_FMwebp_QL-65_.jpg",
     sizes: [7, 8, 9, 10, 11],
     colors: ["Blue", "Red", "Black"],
     brand: "Puma",
@@ -120,7 +129,8 @@ let data = [
   },
   {
     name: "Puma Mayze",
-    image: "./Images/shoes/puma-4.png",
+    image:
+      "https://m.media-amazon.com/images/I/51BbH6OmLXL._AC_UL480_FMwebp_QL65_.jpg",
     sizes: [5, 6, 7, 8, 9],
     colors: ["White", "Black", "Beige"],
     brand: "Puma",
@@ -133,7 +143,8 @@ let data = [
   },
   {
     name: "Puma Future Rider",
-    image: "./Images/shoes/puma-5.png",
+    image:
+      "https://m.media-amazon.com/images/I/61lIE80eMtL._AC_UL480_FMwebp_QL65_.jpg",
     sizes: [7, 8, 9, 10, 11],
     colors: ["Blue", "Yellow", "Grey"],
     brand: "Puma",
@@ -146,7 +157,8 @@ let data = [
   },
   {
     name: "Puma Smash v2",
-    image: "./Images/shoes/puma-6.png",
+    image:
+      "https://m.media-amazon.com/images/I/51xgQrBUhVL._AC_UL480_FMwebp_QL65_.jpg",
     sizes: [3, 4, 5, 6],
     colors: ["White", "Black", "Blue"],
     brand: "Puma",
@@ -161,7 +173,8 @@ let data = [
   // Nike Shoes
   {
     name: "Nike Air Force 1",
-    image: "./Images/shoes/nike-1.png",
+    image:
+      "https://m.media-amazon.com/images/I/71G8KDyRjAL._AC_UL480_FMwebp_QL65_.jpg",
     sizes: [7, 8, 9, 10, 11, 12],
     colors: ["White", "Black", "Red"],
     brand: "Nike",
@@ -174,7 +187,8 @@ let data = [
   },
   {
     name: "Nike Air Max 90",
-    image: "./Images/shoes/nike-2.png",
+    image:
+      "https://m.media-amazon.com/images/I/81qf3IoQTZL._AC_UL480_FMwebp_QL65_.jpg",
     sizes: [7, 8, 9, 10, 11],
     colors: ["White", "Black", "Blue"],
     brand: "Nike",
@@ -187,7 +201,8 @@ let data = [
   },
   {
     name: "Nike React Infinity Run",
-    image: "./Images/shoes/nike-3.png",
+    image:
+      "https://m.media-amazon.com/images/I/614pu2a28wL._AC_UL480_FMwebp_QL65_.jpg",
     sizes: [6, 7, 8, 9, 10],
     colors: ["Black", "White", "Pink"],
     brand: "Nike",
@@ -200,7 +215,8 @@ let data = [
   },
   {
     name: "Nike Blazer Mid '77",
-    image: "./Images/shoes/nike-4.png",
+    image:
+      "https://m.media-amazon.com/images/I/61C7TlRwYlL._AC_UL480_FMwebp_QL65_.jpg",
     sizes: [7, 8, 9, 10, 11],
     colors: ["White", "Black", "Green"],
     brand: "Nike",
@@ -213,7 +229,8 @@ let data = [
   },
   {
     name: "Nike Air Zoom Pegasus 38",
-    image: "./Images/shoes/nike-5.png",
+    image:
+      "https://m.media-amazon.com/images/I/71subBFxFLL._AC_UL480_FMwebp_QL65_.jpg",
     sizes: [6, 7, 8, 9, 10],
     colors: ["Grey", "Pink", "Blue"],
     brand: "Nike",
@@ -226,7 +243,8 @@ let data = [
   },
   {
     name: "Nike Air Max 270",
-    image: "./Images/shoes/nike-6.png",
+    image:
+      "https://m.media-amazon.com/images/I/81y0OVaQCiL._AC_UL480_FMwebp_QL65_.jpg",
     sizes: [3, 4, 5, 6],
     colors: ["Black", "White", "Red"],
     brand: "Nike",
@@ -241,7 +259,8 @@ let data = [
   // Adidas Flip Flops
   {
     name: "Adidas Adilette Comfort",
-    image: "./Images/slides/adidas-1.png",
+    image:
+      "https://m.media-amazon.com/images/I/41kx26cPKWL._AC_UL480_FMwebp_QL65_.jpg",
     sizes: [6, 7, 8, 9, 10, 11],
     colors: ["Black", "Navy", "White"],
     brand: "Adidas",
@@ -254,7 +273,8 @@ let data = [
   },
   {
     name: "Adidas Eezay Flip Flop",
-    image: "./Images/slides/adidas-2.png",
+    image:
+      "https://m.media-amazon.com/images/I/51v04dihPrL._AC_UL480_FMwebp_QL65_.jpg",
     sizes: [5, 6, 7, 8, 9, 10],
     colors: ["Black", "Pink", "Blue"],
     brand: "Adidas",
@@ -267,7 +287,8 @@ let data = [
   },
   {
     name: "Adidas Comfort Flip Flop",
-    image: "./Images/slides/adidas-3.png",
+    image:
+      "https://m.media-amazon.com/images/I/71o227QRuyL._AC_UL480_FMwebp_QL65_.jpg",
     sizes: [7, 8, 9, 10, 11],
     colors: ["Grey", "Black", "Blue"],
     brand: "Adidas",
@@ -280,7 +301,8 @@ let data = [
   },
   {
     name: "Adidas Adilette Aqua",
-    image: "./Images/slides/adidas-4.png",
+    image:
+      "https://m.media-amazon.com/images/I/71d3B+AjpsL._AC_UL480_FMwebp_QL65_.jpg",
     sizes: [5, 6, 7, 8, 9],
     colors: ["Pink", "White", "Black"],
     brand: "Adidas",
@@ -293,7 +315,8 @@ let data = [
   },
   {
     name: "Adidas Duramo Slide",
-    image: "./Images/slides/adidas-5.png",
+    image:
+      "https://m.media-amazon.com/images/I/61MPTeetpDL._AC_UL480_FMwebp_QL65_.jpg",
     sizes: [7, 8, 9, 10, 11],
     colors: ["Navy", "Black", "White"],
     brand: "Adidas",
@@ -306,7 +329,8 @@ let data = [
   },
   {
     name: "Adidas Adilette Kids",
-    image: "./Images/slides/adidas-6.png",
+    image:
+      "https://m.media-amazon.com/images/I/81iFPRvs-mL._AC_UL480_FMwebp_QL65_.jpg",
     sizes: [1, 2, 3, 4],
     colors: ["Blue", "Pink", "Black"],
     brand: "Adidas",
@@ -321,7 +345,8 @@ let data = [
   // Puma Flip Flops
   {
     name: "Puma Epic Flip v2",
-    image: "./Images/slides/puma-1.png",
+    image:
+      "https://m.media-amazon.com/images/I/51BX+E91exL._AC_UL480_FMwebp_QL65_.jpg",
     sizes: [6, 7, 8, 9, 10, 11],
     colors: ["Black", "White", "Blue"],
     brand: "Puma",
@@ -334,7 +359,8 @@ let data = [
   },
   {
     name: "Puma Cozy Flip",
-    image: "./Images/slides/puma-2.png",
+    image:
+      "https://m.media-amazon.com/images/I/51YBeRGjAQL._AC_UL480_FMwebp_QL65_.jpg",
     sizes: [5, 6, 7, 8, 9],
     colors: ["Black", "White", "Pink"],
     brand: "Puma",
@@ -345,10 +371,10 @@ let data = [
     description:
       "Comfortable flip flop with a plush, cushioned footbed and slim straps for a feminine look.",
   },
-  // Continuing Puma Flip Flops
   {
     name: "Puma Divecat v2",
-    image: "./Images/slides/puma-3.png",
+    image:
+      "https://m.media-amazon.com/images/I/41VyVyC-8bL._AC_UL480_FMwebp_QL65_.jpg",
     sizes: [7, 8, 9, 10, 11],
     colors: ["Black", "White", "Red"],
     brand: "Puma",
@@ -361,7 +387,8 @@ let data = [
   },
   {
     name: "Puma Popcat 20",
-    image: "./Images/slides/puma-4.png",
+    image:
+      "https://m.media-amazon.com/images/I/51nqf-tekAL._AC_UL480_FMwebp_QL65_.jpg",
     sizes: [6, 7, 8, 9, 10],
     colors: ["Black", "White", "Pink"],
     brand: "Puma",
@@ -374,7 +401,8 @@ let data = [
   },
   {
     name: "Puma Cool Cat",
-    image: "./Images/slides/puma-5.png",
+    image:
+      "https://m.media-amazon.com/images/I/41Hw3zHcyEL._AC_UL480_FMwebp_QL65_.jpg",
     sizes: [7, 8, 9, 10, 11],
     colors: ["Blue", "Black", "Grey"],
     brand: "Puma",
@@ -387,7 +415,8 @@ let data = [
   },
   {
     name: "Puma Purecat Junior",
-    image: "./Images/slides/puma-6.png",
+    image:
+      "https://m.media-amazon.com/images/I/41UlJC8M9xL._AC_UL480_FMwebp_QL65_.jpg",
     sizes: [1, 2, 3, 4],
     colors: ["Black", "Blue", "Pink"],
     brand: "Puma",
@@ -402,7 +431,8 @@ let data = [
   // Nike Flip Flops
   {
     name: "Nike Benassi JDI",
-    image: "./Images/slides/nike-1.png",
+    image:
+      "https://m.media-amazon.com/images/I/619uQ4R7oHL._AC_UL480_FMwebp_QL65_.jpg",
     sizes: [7, 8, 9, 10, 11, 12],
     colors: ["Black", "White", "Navy"],
     brand: "Nike",
@@ -415,7 +445,8 @@ let data = [
   },
   {
     name: "Nike Kawa",
-    image: "./Images/slides/nike-2.png",
+    image:
+      "https://m.media-amazon.com/images/I/71pBQFLUB1L._AC_UL480_FMwebp_QL65_.jpg",
     sizes: [5, 6, 7, 8, 9, 10],
     colors: ["Black", "White", "Pink"],
     brand: "Nike",
@@ -428,7 +459,8 @@ let data = [
   },
   {
     name: "Nike Victori One",
-    image: "./Images/slides/nike-3.png",
+    image:
+      "https://m.media-amazon.com/images/I/51IKpP342YL._AC_UL480_FMwebp_QL65_.jpg",
     sizes: [7, 8, 9, 10, 11],
     colors: ["Black", "Grey", "Navy"],
     brand: "Nike",
@@ -441,7 +473,8 @@ let data = [
   },
   {
     name: "Nike Bella Kai",
-    image: "./Images/slides/nike-4.png",
+    image:
+      "https://m.media-amazon.com/images/I/51FGCi15lUL._AC_UL480_FMwebp_QL65_.jpg",
     sizes: [5, 6, 7, 8, 9],
     colors: ["Black", "White", "Coral"],
     brand: "Nike",
@@ -454,7 +487,8 @@ let data = [
   },
   {
     name: "Nike Solay",
-    image: "./Images/slides/nike-5.png",
+    image:
+      "https://m.media-amazon.com/images/I/61q6jryAIML._AC_UL480_FMwebp_QL65_.jpg",
     sizes: [7, 8, 9, 10, 11],
     colors: ["Black", "Grey", "Blue"],
     brand: "Nike",
@@ -467,7 +501,8 @@ let data = [
   },
   {
     name: "Nike Kawa Kids",
-    image: "./Images/slides/nike-6.png",
+    image:
+      "https://m.media-amazon.com/images/I/51zi6Z1p0qL._AC_UL480_FMwebp_QL65_.jpg",
     sizes: [1, 2, 3, 4],
     colors: ["Black", "Pink", "Blue"],
     brand: "Nike",
@@ -482,7 +517,8 @@ let data = [
   // Adidas Sandals
   {
     name: "Adidas Terrex Cyprex Ultra II",
-    image: "./Images/other/adidas-1.png",
+    image:
+      "https://m.media-amazon.com/images/I/71ALQ-6RVfL._AC_UL480_FMwebp_QL65_.jpg",
     sizes: [7, 8, 9, 10, 11, 12],
     colors: ["Black", "Grey", "Blue"],
     brand: "Adidas",
@@ -495,7 +531,8 @@ let data = [
   },
   {
     name: "Adidas Comfort Sandal",
-    image: "./Images/other/adidas-2.png",
+    image:
+      "https://m.media-amazon.com/images/I/71xhps7xYmL._AC_UL480_FMwebp_QL65_.jpg",
     sizes: [5, 6, 7, 8, 9, 10],
     colors: ["Black", "White", "Pink"],
     brand: "Adidas",
@@ -508,7 +545,8 @@ let data = [
   },
   {
     name: "Adidas Adilette Sandal",
-    image: "./Images/other/adidas-3.png",
+    image:
+      "https://m.media-amazon.com/images/I/81KoflBWHKL._AC_UL480_FMwebp_QL65_.jpg",
     sizes: [7, 8, 9, 10, 11],
     colors: ["Black", "White", "Grey"],
     brand: "Adidas",
@@ -521,7 +559,8 @@ let data = [
   },
   {
     name: "Adidas Terrex Sumra",
-    image: "./Images/other/adidas-4.png",
+    image:
+      "https://m.media-amazon.com/images/I/71WLKWqS-VL._AC_UL480_FMwebp_QL65_.jpg",
     sizes: [6, 7, 8, 9, 10],
     colors: ["Black", "Pink", "Blue"],
     brand: "Adidas",
@@ -534,7 +573,8 @@ let data = [
   },
   {
     name: "Adidas Adipure CF",
-    image: "https://example.com/images/adidas-adipure-cf.jpg",
+    image:
+      "https://m.media-amazon.com/images/I/81G7Lk5KLoL._AC_UL480_FMwebp_QL65_.jpg",
     sizes: [7, 8, 9, 10, 11],
     colors: ["Black", "Brown", "Navy"],
     brand: "Adidas",
@@ -547,7 +587,8 @@ let data = [
   },
   {
     name: "Adidas Water Sandal",
-    image: "https://example.com/images/adidas-water-sandal.jpg",
+    image:
+      "https://m.media-amazon.com/images/I/71w-L974A4L._AC_UL480_FMwebp_QL65_.jpg",
     sizes: [1, 2, 3, 4],
     colors: ["Blue", "Pink", "Green"],
     brand: "Adidas",
@@ -562,7 +603,8 @@ let data = [
   // Puma Sandals
   {
     name: "Puma Softride Sandal",
-    image: "./Images/other/puma-1.png",
+    image:
+      "https://m.media-amazon.com/images/I/41ACVASdSYL._AC_UL480_FMwebp_QL65_.jpgs",
     sizes: [7, 8, 9, 10, 11],
     colors: ["Black", "Grey", "Navy"],
     brand: "Puma",
@@ -575,7 +617,8 @@ let data = [
   },
   {
     name: "Puma Leadcat YLM",
-    image: "./Images/other/puma-2.png",
+    image:
+      "https://m.media-amazon.com/images/I/61cowatfQfS._AC_UL480_FMwebp_QL65_.jpg",
     sizes: [5, 6, 7, 8, 9, 10],
     colors: ["Black", "White", "Pink"],
     brand: "Puma",
@@ -588,7 +631,8 @@ let data = [
   },
   {
     name: "Puma Wild Sandal",
-    image: "./Images/other/puma-3.png",
+    image:
+      "https://m.media-amazon.com/images/I/710U6KQnAQL._AC_UL480_FMwebp_QL65_.jpg",
     sizes: [7, 8, 9, 10, 11],
     colors: ["Black", "Olive", "Brown"],
     brand: "Puma",
@@ -601,7 +645,8 @@ let data = [
   },
   {
     name: "Puma Anzarun Sandal",
-    image: "./Images/other/puma-4.png",
+    image:
+      "https://m.media-amazon.com/images/I/51KXlGpl37L._AC_UL480_FMwebp_QL65_.jpg",
     sizes: [6, 7, 8, 9, 10],
     colors: ["Black", "White", "Purple"],
     brand: "Puma",
@@ -614,7 +659,8 @@ let data = [
   },
   {
     name: "Puma Fusion Sandal",
-    image: "https://example.com/images/puma-fusion-sandal.jpg",
+    image:
+      "https://m.media-amazon.com/images/I/51SFnuPcDxL._AC_UL480_FMwebp_QL65_.jpg",
     sizes: [7, 8, 9, 10, 11],
     colors: ["Black", "Grey", "Red"],
     brand: "Puma",
@@ -627,7 +673,8 @@ let data = [
   },
   {
     name: "Puma Divecat v2 Kids",
-    image: "https://example.com/images/puma-divecat-v2-kids.jpg",
+    image:
+      "https://m.media-amazon.com/images/I/81UFJyjcPGL._AC_UL480_FMwebp_QL65_.jpg",
     sizes: [1, 2, 3, 4],
     colors: ["Black", "Blue", "Pink"],
     brand: "Puma",
@@ -642,7 +689,8 @@ let data = [
   // Nike Sandals
   {
     name: "Nike Canyon Sandal",
-    image: "./Images/other/nike-1.png",
+    image:
+      "https://m.media-amazon.com/images/I/71xhps7xYmL._AC_UL480_FMwebp_QL65_.jpg",
     sizes: [7, 8, 9, 10, 11, 12],
     colors: ["Black", "Khaki", "Grey"],
     brand: "Nike",
@@ -655,7 +703,8 @@ let data = [
   },
   {
     name: "Nike Bella Kai Thong",
-    image: "./Images/other/nike-2.png",
+    image:
+      "https://m.media-amazon.com/images/I/61Y8qVPJgtL._AC_UL480_FMwebp_QL65_.jpg",
     sizes: [5, 6, 7, 8, 9, 10],
     colors: ["Black", "White", "Rose Gold"],
     brand: "Nike",
@@ -668,7 +717,8 @@ let data = [
   },
   {
     name: "Nike Sunray Protect 2",
-    image: "./Images/other/nike-3.png",
+    image:
+      "https://m.media-amazon.com/images/I/71DXltcQ3iL._AC_UL480_FMwebp_QL65_.jpg",
     sizes: [1, 2, 3, 4],
     colors: ["Black", "Blue", "Pink"],
     brand: "Nike",
@@ -681,7 +731,8 @@ let data = [
   },
   {
     name: "Nike Owaysis",
-    image: "./Images/other/nike-4.png",
+    image:
+      "https://m.media-amazon.com/images/I/81l41MpiktL._AC_UL480_FMwebp_QL65_.jpg",
     sizes: [6, 7, 8, 9, 10],
     colors: ["Black", "White", "Tan"],
     brand: "Nike",
@@ -694,7 +745,8 @@ let data = [
   },
   {
     name: "Nike Tanjun Sandal",
-    image: "./Images/other/nike-5.png",
+    image:
+      "https://m.media-amazon.com/images/I/71l67SoiBkL._AC_UL480_FMwebp_QL65_.jpg",
     sizes: [7, 8, 9, 10, 11],
     colors: ["Black", "Grey", "Navy"],
     brand: "Nike",
@@ -707,7 +759,8 @@ let data = [
   },
   {
     name: "Nike Sunray Adjust 5",
-    image: "https://example.com/images/nike-sunray-adjust-5.jpg",
+    image:
+      "https://m.media-amazon.com/images/I/61E3Q0mzEbL._AC_UL480_FMwebp_QL65_.jpg",
     sizes: [7, 8, 9, 10, 11],
     colors: ["Black", "Grey", "Blue"],
     brand: "Nike",

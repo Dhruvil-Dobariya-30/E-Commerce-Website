@@ -15,9 +15,11 @@ function bestProducts() {
   let bestProductsHTML = "";
 
   for (var i = 2; i < 6; i++) {
+    console.log(allData[i]);
+
     bestProductsHTML += `
     <div class="items">
-      <img src="../Images/shoes/adidas-${i}.png" alt="${allData[i - 1].image}"> 
+      <img src="${allData[i].image}" alt="${allData[i - 1].image}"> 
       <h3>${allData[i - 1].name}</h3>
       <p>Rating : ${allData[i - 1].rating} (155 Reviews) </p>
       <p>Price  : ${allData[i - 1].price}₹</p>
