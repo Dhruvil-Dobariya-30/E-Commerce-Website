@@ -38,8 +38,11 @@ nav += `
             </ul>
             <div class="menu"><i class="fa-solid fa-bars"></i></div>
         </div>
-        <a href="../index.html" class="highlight">Login</a>
-        <a href="../index.html" class="highlight"><i class="fa-solid fa-cart-shopping"></i></a>
+        <div class="all-btn">
+            <a href="../Cart/Cart.html" class="highlight">Cart</a>
+            <a href="../index.html" class="highlight">Login</a>
+            <a href="..//SignUp/signUp.html" class="highlight">Register</a>
+        </div>
         <div class="dropdown-menu">
             <ul>
                 <li><a href="#">About</a></li>
