@@ -1,9 +1,9 @@
 function reset() {
   let allData = JSON.parse(localStorage.getItem("SignupData")) || [];
-  const email = document.getElementById("resetEmail").value;
-  const password = document.getElementById("password").value;
-  const rePassword = document.getElementById("re-pass").value;
-  const messageElement = document.getElementById("message");
+  let email = document.getElementById("resetEmail").value;
+  let password = document.getElementById("password").value;
+  let rePassword = document.getElementById("re-pass").value;
+  let messageElement = document.getElementById("message");
 
   let userFound = false;
 

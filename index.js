@@ -3,7 +3,7 @@ let bestProductsDiv = document.querySelector(".bestProducts");
 
 new Typed("#typed-text", {
   strings: ["Discover Your Style", "Step into Comfort", "Experience the Best"],
-  typeSpeed: 50,
+  typeSpeed: 70,
   backSpeed: 25,
   loop: true,
   showCursor: false,

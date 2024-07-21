@@ -13,6 +13,14 @@
     <main>
       <h1 id="our-products" class="header">Our Products</h1>
       <div class="filter-container">
+        <div class="search-container">
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Search products..."
+            onkeyup="performSearch()"
+          />
+        </div>
         <div class="filterDiv"></div>
       </div>
       <div class="allProductDiv"></div>
@@ -21,9 +29,9 @@
 
     <div id="footer"></div>
     <script src="./AllProducts.js"></script>
-    <script src="../Navbar/Navbar.js"></script>
     <script src="../Single-Product/SingleProduct.js"></script>
     <script src="../Cart/Cart.js"></script>
+    <script src="../Navbar/Navbar.js"></script>
     <script src="../Footer/Footer.js"></script>
   </body>
 </html>

@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const footerContainer = document.getElementById("footer");
+  let footerContainer = document.getElementById("footer");
 
-  const footerHTML = `
+  let footerHTML = `
     <footer class="footer">
       <div class="footer-content">
         <div class="footer-section">

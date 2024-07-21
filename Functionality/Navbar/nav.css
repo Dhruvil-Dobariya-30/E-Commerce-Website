@@ -1,5 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap");
+
 body {
+  font-family: "Muktas", serif;
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .navbar {
@@ -23,7 +28,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-grow: 1;
+  flex: 1;
   margin: 0 20px;
 }
 
@@ -43,7 +48,7 @@ body {
 .navbar-links a {
   color: white;
   text-decoration: none;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .navbar-links a:hover {

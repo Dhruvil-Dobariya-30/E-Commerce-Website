@@ -1,19 +1,19 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const navbarContainer = document.getElementById("navbar");
+  let navbarContainer = document.getElementById("navbar");
   let loginData = JSON.parse(localStorage.getItem("Login"));
   let signupData = JSON.parse(localStorage.getItem("SignupData"));
 
   function userName(email) {
-    const user = signupData.find((user) => user.email === email);
+    let user = signupData.find((user) => user.email === email);
     return user ? user.name : "User";
   }
 
   function updateNavbar() {
-    const user = loginData ? userName(loginData.email) : null;
+    let user = loginData ? userName(loginData.email) : null;
 
-    const navbarHTML = `
+    let navbarHTML = `
       <nav class="navbar">
-        <a href="/" class="navbar-brand">Shoe</a>
+        <a href="/" class="navbar-brand">FootSteps</a>
         <button class="navbar-toggle">&#9776;</button>
         <div class="navbar-menu">
           <ul class="navbar-links">
@@ -39,7 +39,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 ${
                   user
                     ? `<p>Welcome, ${user}</p>
-                     <a href="../../Auth/Reset-Password/Reset-Password.html">Reset Password</a>`
+                     <a href="../../Auth/Reset-Password/Reset-Password.html">Reset Password</a>
+                     <a href="../../Functionality/Shipping-Page/Shipping-Page.html">Track Order</a>
+                     `
                     : "<p>Please log in to view your profile</p>"
                 }
               </div>
@@ -51,11 +53,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     navbarContainer.innerHTML = navbarHTML;
 
-    const navbarToggle = document.querySelector(".navbar-toggle");
-    const navbarMenu = document.querySelector(".navbar-menu");
-    const buttons = document.querySelector(".buttons");
-    const loginLogoutBtn = document.getElementById("loginLogoutBtn");
-    const cartLink = document.getElementById("cartLink");
+    let navbarToggle = document.querySelector(".navbar-toggle");
+    let navbarMenu = document.querySelector(".navbar-menu");
+    let buttons = document.querySelector(".buttons");
+    let loginLogoutBtn = document.getElementById("loginLogoutBtn");
+    let cartLink = document.getElementById("cartLink");
 
     navbarToggle.addEventListener("click", function () {
       navbarMenu.classList.toggle("active");

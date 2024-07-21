@@ -1,6 +1,6 @@
 let Data = JSON.parse(localStorage.getItem("data")) || [];
 let singleProductDiv = document.querySelector(".item");
-const ID = new URLSearchParams(window.location.search).get("id");
+let ID = new URLSearchParams(window.location.search).get("id");
 let productID = JSON.parse(ID);
 
 function displayProduct() {

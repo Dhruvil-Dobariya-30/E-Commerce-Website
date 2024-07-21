@@ -23,7 +23,7 @@ function checkEmail() {
 }
 
 function generateCaptcha() {
-  const all = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+  let all = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
   currentCaptcha = "";
 
   for (let i = 0; i < 6; i++) {
@@ -54,7 +54,7 @@ function resetPassword() {
     return;
   }
 
-  const user = allData.find((u) => u.email === currentEmail);
+  let user = allData.find((u) => u.email === currentEmail);
   if (user) {
     user.password = newPass.value;
     localStorage.setItem("SignupData", JSON.stringify(allData));

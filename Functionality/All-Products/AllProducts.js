@@ -1,9 +1,10 @@
 let alldatas = JSON.parse(localStorage.getItem("data")) || [];
-const productDiv = document.querySelector(".allProductDiv");
-const loadMoreBtn = document.getElementById("load-more-btn");
+let productDiv = document.querySelector(".allProductDiv");
+let loadMoreBtn = document.getElementById("load-more-btn");
+let searchInput = document.getElementById("search-input");
 let currentItem = 0;
-const initialLoad = 8;
-const itemsPerLoad = 4;
+let initialLoad = 8;
+let itemsPerLoad = 4;
 
 let filters = {
   brand: "All",
@@ -11,6 +12,7 @@ let filters = {
   price: "All",
   category: "All",
   type: "All",
+  search: "",
 };
 
 function filterProducts(products) {
@@ -18,7 +20,12 @@ function filterProducts(products) {
     (product) =>
       (filters.brand === "All" || product.brand === filters.brand) &&
       (filters.category === "All" || product.category === filters.category) &&
-      (filters.type === "All" || product.type === filters.type)
+      (filters.type === "All" || product.type === filters.type) &&
+      (filters.search === "" ||
+        product.name.toLowerCase().includes(filters.search.toLowerCase()) ||
+        product.brand.toLowerCase().includes(filters.search.toLowerCase()) ||
+        product.category.toLowerCase().includes(filters.search.toLowerCase()) ||
+        product.type.toLowerCase().includes(filters.search.toLowerCase()))
   );
 }
 
@@ -55,8 +62,8 @@ function productList(product) {
 }
 
 function displayProducts(start, end) {
-  const filteredData = sortProducts(filterProducts(alldatas));
-  const newProducts = filteredData.slice(start, end).map(productList).join("");
+  let filteredData = sortProducts(filterProducts(alldatas));
+  let newProducts = filteredData.slice(start, end).map(productList).join("");
 
   if (start === 0) {
     productDiv.innerHTML = newProducts;
@@ -101,7 +108,7 @@ function manageFilter(id, options) {
 }
 
 function options(array, key) {
-  const uniqueValues = ["All"];
+  let uniqueValues = ["All"];
   for (let i = 0; i < array.length; i++) {
     if (!uniqueValues.includes(array[i][key])) {
       uniqueValues.push(array[i][key]);
@@ -111,8 +118,8 @@ function options(array, key) {
 }
 
 function setupFilters() {
-  const filterDiv = document.querySelector(".filterDiv");
-  const filterOptions = {
+  let filterDiv = document.querySelector(".filterDiv");
+  let filterOptions = {
     Brand: options(alldatas, "brand"),
     Rating: ["All", "High to Low", "Low to High"],
     Price: ["All", "Low to High", "High to Low"],
@@ -131,6 +138,12 @@ function setupFilters() {
   document.getElementById("Price").addEventListener("change", updateFilters);
   document.getElementById("Category").addEventListener("change", updateFilters);
   document.getElementById("Type").addEventListener("change", updateFilters);
+}
+
+function performSearch() {
+  filters.search = searchInput.value;
+  currentItem = 0;
+  displayProducts(0, initialLoad);
 }
 
 setupFilters();

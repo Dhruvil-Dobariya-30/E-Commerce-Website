@@ -1,4 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap");
+
 body {
+  font-family: "Mukta", serif;
   background-color: #f8f9fa;
   color: #212529;
   margin: 0;
@@ -25,6 +28,29 @@ main {
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   margin-bottom: 1.5rem;
+}
+
+.search-container {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+#search-input {
+  flex-grow: 1;
+  padding: 0.5rem;
+  border: 1px solid #4361ee;
+  border-radius: 5px 0 0 5px;
+  font-family: "Mukta", serif;
+}
+
+#search-button {
+  padding: 0.5rem 1rem;
+  background-color: #4361ee;
+  color: #fff;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-family: "Mukta", serif;
 }
 
 .filterDiv {

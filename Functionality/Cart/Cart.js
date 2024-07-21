@@ -31,8 +31,8 @@ function addToCart(id) {
 }
 
 function displayCart() {
-  const cartBody = document.getElementById("cart-items-body");
-  const itemCount = document.getElementById("item-count");
+  let cartBody = document.getElementById("cart-items-body");
+  let itemCount = document.getElementById("item-count");
   itemCount.textContent = `${cartItems.length} items in your bag.`;
 
   let cartHTML = "";
@@ -46,17 +46,27 @@ function displayCart() {
                     <div>
                         <h4>${item.name}</h4>
                         <select class="color-select">
-                            ${item.colors.map(color => `<option value="${color}">${color}</option>`).join("")}
+                            ${item.colors
+                              .map(
+                                (color) =>
+                                  `<option value="${color}">${color}</option>`
+                              )
+                              .join("")}
                         </select>
                         <select class="size-select">
-                            ${item.sizes.map(size => `<option value="${size}">${size}</option>`).join("")}
+                            ${item.sizes
+                              .map(
+                                (size) =>
+                                  `<option value="${size}">${size}</option>`
+                              )
+                              .join("")}
                         </select>
                     </div>
                 </div>
             </td>
             <td data-label="Price">
                 <span class="mobile-label">Price</span>
-                $${item.price.toFixed(2)}
+                ₹${item.price.toFixed(2)}
             </td>
             <td data-label="Quantity">
                 <span class="mobile-label">Quantity</span>
@@ -68,11 +78,13 @@ function displayCart() {
             </td>
             <td data-label="Total Price">
                 <span class="mobile-label">Total Price</span>
-                $${(item.price * item.quantity).toFixed(2)}
+                ₹${(item.price * item.quantity).toFixed(2)}
             </td>
             <td data-label="Action">
                 <span class="mobile-label">Action</span>
-                <button onclick="removeFromCart(${item.id})" class="remove-btn">Remove</button>
+                <button onclick="removeFromCart(${
+                  item.id
+                })" class="remove-btn">Remove</button>
             </td>
         </tr>
     `;
@@ -89,7 +101,7 @@ function removeFromCart(id) {
 }
 
 function updateQuantity(id, change) {
-  const item = cartItems.find((item) => item.id === id);
+  let item = cartItems.find((item) => item.id === id);
   if (item) {
     item.quantity += change;
     if (item.quantity <= 0) {
@@ -106,23 +118,23 @@ function saveCart() {
 }
 
 function updateCartSummary() {
-  const subtotal = cartItems.reduce(
+  let subtotal = cartItems.reduce(
     (total, item) => total + item.price * item.quantity,
     0
   );
-  const discount = subtotal * discountPercentage;
-  const total = subtotal - discount;
-  document.getElementById("cart-subtotal").textContent = `$${subtotal.toFixed(
+  let discount = subtotal * discountPercentage;
+  let total = subtotal - discount;
+  document.getElementById("cart-subtotal").textContent = `₹${subtotal.toFixed(
     2
   )}`;
-  document.getElementById("discount-amount").textContent = `$${discount.toFixed(
+  document.getElementById("discount-amount").textContent = `₹${discount.toFixed(
     2
   )}`;
-  document.getElementById("cart-total").textContent = `$${total.toFixed(2)}`;
+  document.getElementById("cart-total").textContent = `₹${total.toFixed(2)}`;
 }
 
 function applyCoupon() {
-  const couponCode = document.getElementById("coupon-input").value;
+  let couponCode = document.getElementById("coupon-input").value;
   if (couponCode === "Offer-1" || couponCode === "Offer-2") {
     discountPercentage = 0.3;
     alert("30% discount applied!");
@@ -135,13 +147,15 @@ function applyCoupon() {
   updateCartSummary();
 }
 
+function saveDeliveryAddress() {
+  let address = document.getElementById("delivery-address").value;
+  localStorage.setItem("deliveryAddress", address);
+}
+
 function checkout() {
-  const modal = document.getElementById("confirmation-modal");
-  modal.style.display = "block";
-  setTimeout(() => {
-    modal.style.display = "none";
-    window.location.href = "../../index.html";
-  }, 2000);
+  saveDeliveryAddress();
+  localStorage.setItem("discountPercentage", discountPercentage);
+  window.location.href = "../../Functionality/Shipping-Page/Shipping-Page.html";
 }
 
 document.addEventListener("DOMContentLoaded", () => {

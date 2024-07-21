@@ -1,4 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap");
+
 body {
+  font-family: "Mukta", serif;
   background-color: #f8f9fa;
   color: #212529;
   margin: 0;
@@ -252,6 +255,24 @@ button:hover {
   text-transform: uppercase;
   color: #3a0ca3;
   margin-bottom: 5px;
+}
+
+.address-field {
+  margin-bottom: 20px;
+}
+
+.address-field h3 {
+  color: #3a0ca3;
+  margin-top: 0;
+}
+
+#delivery-address {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  font-size: 1rem;
+  resize: vertical;
 }
 
 @media (max-width: 768px) {
