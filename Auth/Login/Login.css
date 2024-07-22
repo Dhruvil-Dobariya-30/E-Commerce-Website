@@ -83,7 +83,7 @@ button:hover {
   color: #3a0ca3;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .container {
     width: 90%;
     padding: 1.5rem;

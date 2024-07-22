@@ -4,7 +4,6 @@ let ID = new URLSearchParams(window.location.search).get("id");
 let productID = JSON.parse(ID);
 
 function displayProduct() {
-  console.log(productID);
   singleProductDiv = "";
 
   Data.map((data) => {
@@ -22,7 +21,7 @@ function displayProduct() {
             <p class="card-details">Collection: ${data.category}</p>
             <p class="card-details">Type: ${data.type}</p>
             <p class="rating">Rating: ${data.rating} / 5.0</p>
-            <h2 class="card-price">${data.price}₹</h2>
+            <h2 class="card-price">Price : ${data.price}₹</h2>
             <button class="btn" onclick="addToCart(${productID})">Add To Cart</button>
         </div>
        </div>

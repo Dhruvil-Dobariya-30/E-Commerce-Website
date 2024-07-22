@@ -40,7 +40,6 @@ main {
   padding: 0.5rem;
   border: 1px solid #4361ee;
   border-radius: 5px 0 0 5px;
-  font-family: "Mukta", serif;
 }
 
 #search-button {
@@ -50,7 +49,6 @@ main {
   border: none;
   border-radius: 0 5px 5px 0;
   cursor: pointer;
-  font-family: "Mukta", serif;
 }
 
 .filterDiv {
@@ -60,7 +58,7 @@ main {
 }
 
 .filterDiv > div {
-  flex: 1 1 200px;
+  flex: 2;
 }
 
 .filterDiv select {
@@ -89,6 +87,7 @@ main {
 
 .product-list:hover {
   transform: translateY(-10px);
+  transition: transform 0.3s ease;
 }
 
 .product-list img {
@@ -144,6 +143,7 @@ main {
 
 .btn:hover {
   transform: translateY(-3px);
+  transition: transform 0.3s ease;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -151,7 +151,7 @@ main {
   display: block;
   background-color: #3a0ca3;
   color: #fff;
-  padding: 10px;
+  padding: 15px;
   border: none;
   border-radius: 5px;
   margin: 2rem auto 0;
@@ -159,21 +159,10 @@ main {
   max-width: 300px;
 }
 
-@media (max-width: 1200px) {
-  .product-list {
-    width: 31%;
-  }
-}
-
-@media (max-width: 900px) {
-  .product-list {
-    width: 48%;
-  }
-}
-
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .product-list {
     width: 100%;
+    max-width: 330px;
   }
 
   .header {

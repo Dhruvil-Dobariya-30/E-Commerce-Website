@@ -5,7 +5,6 @@ let loginData = JSON.parse(localStorage.getItem("Login")) || null;
 
 function isLogin(id) {
   if (loginData) {
-    console.log("id received: ", id);
     addToCart(id);
   } else {
     alert("Please Login For Add Items In Cart!");
@@ -13,11 +12,11 @@ function isLogin(id) {
 }
 
 function addToCart(id) {
-  console.log("second");
   let productData = allData.find((data) => data.id === id);
   let existingItem = cartItems.find((item) => item.id === id);
   if (existingItem) {
-    existingItem.quantity += 1;
+    alert("Product already added!");
+    // existingItem.quantity += 1;
   } else {
     cartItems.push({
       ...productData,
@@ -35,9 +34,9 @@ function displayCart() {
   let itemCount = document.getElementById("item-count");
   itemCount.textContent = `${cartItems.length} items in your bag.`;
 
-  let cartHTML = "";
+  let cartData = "";
   cartItems.forEach((item) => {
-    cartHTML += `
+    cartData += `
         <tr>
             <td data-label="Product">
                 <span class="mobile-label">Product</span>
@@ -90,7 +89,7 @@ function displayCart() {
     `;
   });
 
-  cartBody.innerHTML = cartHTML;
+  cartBody.innerHTML = cartData;
   updateCartSummary();
 }
 
@@ -153,9 +152,16 @@ function saveDeliveryAddress() {
 }
 
 function checkout() {
-  saveDeliveryAddress();
-  localStorage.setItem("discountPercentage", discountPercentage);
-  window.location.href = "../../Functionality/Shipping-Page/Shipping-Page.html";
+  let address = document.getElementById("delivery-address").value;
+  if (address == "") {
+    alert("Please enter delivery address!");
+  } else {
+    alert("Order Placed successfully!");
+    saveDeliveryAddress();
+    localStorage.setItem("discountPercentage", discountPercentage);
+    window.location.href =
+      "../../Functionality/Shipping-Page/Shipping-Page.html";
+  }
 }
 
 document.addEventListener("DOMContentLoaded", () => {

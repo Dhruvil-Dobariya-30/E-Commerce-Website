@@ -2,8 +2,7 @@ let data = [
   {
     id: 0,
     name: "Adidas Ultraboost 21",
-    image:
-      "https://m.media-amazon.com/images/I/414FfrsToBL._AC_UL480_FMwebp_QL65_.jpg",
+    image: "https://m.media-amazon.com/images/I/71JkSEFDTqL._AC_UL320_.jpg",
     sizes: [7, 8, 9, 10, 11, 12],
     colors: ["Black", "White", "Blue"],
     brand: "Adidas",
@@ -18,8 +17,7 @@ let data = [
   {
     id: 1,
     name: "Adidas Stan Smith",
-    image:
-      "https://m.media-amazon.com/images/I/8169RvcpPKL._AC_UL480_FMwebp_QL65_.jpg",
+    image: "https://m.media-amazon.com/images/I/81vPXSDScCL._AC_UL320_.jpg",
     sizes: [6, 7, 8, 9, 10, 11],
     colors: ["White", "Green", "Navy"],
     brand: "Adidas",
@@ -34,15 +32,14 @@ let data = [
   {
     id: 2,
     name: "Adidas Superstar",
-    image:
-      "https://m.media-amazon.com/images/I/71YgZ+wVdQL._AC_UL480_FMwebp_QL65_.jpg",
+    image: "https://m.media-amazon.com/images/I/81ELPkiTZlL._AC_UL320_.jpg",
     sizes: [6, 7, 8, 9, 10, 11],
     colors: ["White", "Black", "Red"],
     brand: "Adidas",
     price: 6375,
     category: "Male",
     type: "Shoes",
-    rating: 4.6,
+    rating: 3.9,
     inStock: true,
     description:
       "Classic shell-toe sneaker with iconic 3-Stripes design, perfect for street style and everyday wear.",
@@ -50,15 +47,14 @@ let data = [
   {
     id: 3,
     name: "Adidas Ultraboost 22",
-    image:
-      "https://m.media-amazon.com/images/I/61ILsOc77PL._AC_UL480_FMwebp_QL65_.jpg",
+    image: "https://m.media-amazon.com/images/I/71No3Vu960L._AC_UL320_.jpg",
     sizes: [5, 6, 7, 8, 9, 10],
     colors: ["Pink", "White", "Grey"],
     brand: "Adidas",
     price: 14250,
     category: "Female",
     type: "Shoes",
-    rating: 4.8,
+    rating: 2.8,
     inStock: true,
     description:
       "Women's specific fit running shoe with adaptive knit upper and responsive Boost midsole for ultimate comfort and performance.",
@@ -66,8 +62,7 @@ let data = [
   {
     id: 4,
     name: "Adidas NMD R1",
-    image:
-      "https://m.media-amazon.com/images/I/61SNAIvsV7L._AC_UL480_FMwebp_QL65_.jpg",
+    image: "https://m.media-amazon.com/images/I/81er6GeEmcL._AC_UL320_.jpg",
     sizes: [7, 8, 9, 10, 11],
     colors: ["Black", "White", "Red"],
     brand: "Adidas",
@@ -83,7 +78,7 @@ let data = [
     id: 5,
     name: "Adidas Gazelle",
     image:
-      "https://m.media-amazon.com/images/I/71cseSM718L._AC_UL480_FMwebp_QL65_.jpg",
+      "https://m.media-amazon.com/images/I/71YgZ+wVdQL._AC_UL480_FMwebp_QL65_.jpg",
     sizes: [3, 4, 5, 6],
     colors: ["Blue", "Pink", "Black"],
     brand: "Adidas",
@@ -100,8 +95,7 @@ let data = [
   {
     id: 6,
     name: "Puma RS-X",
-    image:
-      "https://m.media-amazon.com/images/I/71uEBGZ+5HL._AC_UL480_FMwebp_QL65_.jpg",
+    image: "https://m.media-amazon.com/images/I/513SzEEev1L._AC_UL320_.jpg",
     sizes: [7, 8, 9, 10, 11],
     colors: ["White", "Black", "Red"],
     brand: "Puma",
@@ -124,7 +118,7 @@ let data = [
     price: 6000,
     category: "Female",
     type: "Shoes",
-    rating: 4.3,
+    rating: 3.9,
     inStock: true,
     description:
       "Sleek and stylish low-top sneaker inspired by California vibes, featuring a stacked sole for added height and attitude.",
@@ -140,7 +134,7 @@ let data = [
     price: 5250,
     category: "Male",
     type: "Shoes",
-    rating: 4.6,
+    rating: 2.6,
     inStock: true,
     description:
       "Timeless street-style icon with a soft suede upper and the classic formstrip design.",
@@ -198,8 +192,7 @@ let data = [
   {
     id: 12,
     name: "Nike Air Force 1",
-    image:
-      "https://m.media-amazon.com/images/I/71G8KDyRjAL._AC_UL480_FMwebp_QL65_.jpg",
+    image: "https://m.media-amazon.com/images/I/71i9kPUJDrL._AC_UL320_.jpg",
     sizes: [7, 8, 9, 10, 11, 12],
     colors: ["White", "Black", "Red"],
     brand: "Nike",
@@ -230,8 +223,7 @@ let data = [
   {
     id: 14,
     name: "Nike React Infinity Run",
-    image:
-      "https://m.media-amazon.com/images/I/614pu2a28wL._AC_UL480_FMwebp_QL65_.jpg",
+    image: "https://m.media-amazon.com/images/I/71aJDfGsFKL._AC_UL320_.jpg",
     sizes: [6, 7, 8, 9, 10],
     colors: ["Black", "White", "Pink"],
     brand: "Nike",
@@ -246,15 +238,14 @@ let data = [
   {
     id: 15,
     name: "Nike Blazer Mid '77",
-    image:
-      "https://m.media-amazon.com/images/I/61C7TlRwYlL._AC_UL480_FMwebp_QL65_.jpg",
+    image: "https://m.media-amazon.com/images/I/61QecQhdXIL._AC_UL320_.jpg",
     sizes: [7, 8, 9, 10, 11],
     colors: ["White", "Black", "Green"],
     brand: "Nike",
     price: 7125,
     category: "Male",
     type: "Shoes",
-    rating: 4.5,
+    rating: 3.5,
     inStock: true,
     description:
       "Vintage-inspired basketball shoe with a leather upper, exposed foam tongue, and retro styling.",
@@ -262,15 +253,14 @@ let data = [
   {
     id: 16,
     name: "Nike Air Zoom Pegasus 38",
-    image:
-      "https://m.media-amazon.com/images/I/71subBFxFLL._AC_UL480_FMwebp_QL65_.jpg",
+    image: "https://m.media-amazon.com/images/I/81jS60ojx3L._AC_UL320_.jpg",
     sizes: [6, 7, 8, 9, 10],
     colors: ["Grey", "Pink", "Blue"],
     brand: "Nike",
     price: 9000,
     category: "Female",
     type: "Shoes",
-    rating: 4.7,
+    rating: 2.7,
     inStock: true,
     description:
       "Versatile running shoe with responsive Nike React foam and Zoom Air unit for a smooth, springy ride mile after mile.",
@@ -278,8 +268,7 @@ let data = [
   {
     id: 17,
     name: "Nike Air Max 270",
-    image:
-      "https://m.media-amazon.com/images/I/81y0OVaQCiL._AC_UL480_FMwebp_QL65_.jpg",
+    image: "https://m.media-amazon.com/images/I/81Wy5uIFdmL._AC_UL320_.jpg",
     sizes: [3, 4, 5, 6],
     colors: ["Black", "White", "Red"],
     brand: "Nike",
@@ -336,7 +325,7 @@ let data = [
     price: 2250,
     category: "Male",
     type: "Slides",
-    rating: 4.4,
+    rating: 3.4,
     inStock: true,
     description:
       "Casual flip flop with a cushioned footbed and textured outsole for traction and durability.",
@@ -352,7 +341,7 @@ let data = [
     price: 1875,
     category: "Female",
     type: "Slides",
-    rating: 4.5,
+    rating: 2.5,
     inStock: true,
     description:
       "Sleek and stylish slide with a soft, quick-drying bandage upper and cushioned footbed.",
@@ -450,7 +439,7 @@ let data = [
     price: 1350,
     category: "Female",
     type: "Slides",
-    rating: 4.5,
+    rating: 3.5,
     inStock: true,
     description:
       "Classic slide with a bold PUMA wordmark across the strap and a soft, comfortable footbed.",
@@ -466,7 +455,7 @@ let data = [
     price: 1500,
     category: "Male",
     type: "Slides",
-    rating: 4.3,
+    rating: 2.3,
     inStock: true,
     description:
       "Lightweight and flexible slide with a contoured footbed and textured outsole for grip.",
@@ -500,7 +489,7 @@ let data = [
     price: 1875,
     category: "Male",
     type: "Slides",
-    rating: 4.7,
+    rating: 3.7,
     inStock: true,
     description:
       "Iconic slide with a textured footbed for massage-like comfort and a bold Nike logo on the strap.",
@@ -532,7 +521,7 @@ let data = [
     price: 1875,
     category: "Male",
     type: "Slides",
-    rating: 4.6,
+    rating: 2.6,
     inStock: true,
     description:
       "Sleek slide with a dual-density foam footbed for cushioned comfort and a grippy outsole.",
@@ -598,7 +587,7 @@ let data = [
     price: 4875,
     category: "Male",
     type: "Sandals",
-    rating: 4.6,
+    rating: 2.6,
     inStock: true,
     description:
       "Versatile outdoor sandal with adjustable straps, quick-drying materials, and a rugged outsole for excellent traction.",
@@ -630,7 +619,7 @@ let data = [
     price: 3750,
     category: "Male",
     type: "Sandals",
-    rating: 4.4,
+    rating: 3.4,
     inStock: true,
     description:
       "Sport-inspired sandal with the classic three-stripe design and a contoured footbed for comfort.",
@@ -689,7 +678,7 @@ let data = [
     id: 42,
     name: "Puma Softride Sandal",
     image:
-      "https://m.media-amazon.com/images/I/41ACVASdSYL._AC_UL480_FMwebp_QL65_.jpgs",
+      "https://m.media-amazon.com/images/I/41ACVASdSYL._AC_UL480_FMwebp_QL65_.jpg",
     sizes: [7, 8, 9, 10, 11],
     colors: ["Black", "Grey", "Navy"],
     brand: "Puma",
@@ -712,7 +701,7 @@ let data = [
     price: 2250,
     category: "Female",
     type: "Sandals",
-    rating: 4.4,
+    rating: 3.4,
     inStock: true,
     description:
       "Sleek and stylish sandal with a wide strap and molded footbed for fashion-forward comfort.",
@@ -744,7 +733,7 @@ let data = [
     price: 2625,
     category: "Female",
     type: "Sandals",
-    rating: 4.2,
+    rating: 2.2,
     inStock: true,
     description:
       "Sporty sandal with a sleek silhouette, featuring adjustable straps and a cushioned footbed.",
@@ -794,7 +783,7 @@ let data = [
     price: 4500,
     category: "Male",
     type: "Sandals",
-    rating: 4.6,
+    rating: 2.6,
     inStock: true,
     description:
       "Rugged outdoor-inspired sandal with adjustable straps and Nike's React foam for responsive cushioning.",
@@ -826,7 +815,7 @@ let data = [
     price: 2250,
     category: "Kids",
     type: "Sandals",
-    rating: 4.5,
+    rating: 3.5,
     inStock: true,
     description:
       "Durable and protective kids' sandal with adjustable straps and quick-drying materials for active summer play.",

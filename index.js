@@ -1,6 +1,7 @@
 let allDatas = JSON.parse(localStorage.getItem("data"));
 let bestProductsDiv = document.querySelector(".bestProducts");
 
+// Typed.js Library used for text animation.
 new Typed("#typed-text", {
   strings: ["Discover Your Style", "Step into Comfort", "Experience the Best"],
   typeSpeed: 70,
@@ -9,10 +10,10 @@ new Typed("#typed-text", {
   showCursor: false,
 });
 function bestProducts() {
-  let bestProductsHTML = "";
+  let bestProducts = "";
 
   for (var i = 1; i < 5; i++) {
-    bestProductsHTML += `
+    bestProducts += `
     <div class="items">
       <img src="${allDatas[i - 1].image}" alt="${allDatas[i - 1].name}"> 
       <h3>${allDatas[i - 1].name}</h3>
@@ -30,7 +31,7 @@ function bestProducts() {
     `;
   }
 
-  bestProductsDiv.innerHTML = bestProductsHTML;
+  bestProductsDiv.innerHTML = bestProducts;
 }
 
 bestProducts();

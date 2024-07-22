@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
   function updateNavbar() {
     let user = loginData ? userName(loginData.email) : null;
 
-    let navbarHTML = `
+    let navbar = `
       <nav class="navbar">
         <a href="/" class="navbar-brand">FootSteps</a>
         <button class="navbar-toggle">&#9776;</button>
@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
       </nav>
     `;
 
-    navbarContainer.innerHTML = navbarHTML;
+    navbarContainer.innerHTML = navbar;
 
     let navbarToggle = document.querySelector(".navbar-toggle");
     let navbarMenu = document.querySelector(".navbar-menu");

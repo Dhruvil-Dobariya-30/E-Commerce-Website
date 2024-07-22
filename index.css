@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap");
 
+* {
+  scroll-behavior: smooth;
+  transition: all 0.3s ease-in;
+}
+
 body {
   font-family: "Mukta";
   background-color: #f8f9fa;
@@ -22,6 +27,7 @@ body {
   justify-content: center;
   position: relative;
   overflow: hidden;
+  transition: ease 0.5s;
 }
 
 @keyframes gradient {
@@ -55,7 +61,6 @@ body {
   font-weight: 800;
   width: 700px;
   height: 100px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
   margin-bottom: 3rem;
 }
 
@@ -74,7 +79,14 @@ body {
   max-width: 500px;
   height: auto;
   border-radius: 50%;
-  animation: float 6s ease-in-out infinite;
+  /* animation: float 6s ease-in-out infinite; */
+  animation: glow 1.5s linear infinite alternate, float 6s ease-in-out infinite;
+}
+
+@keyframes glow {
+  to {
+    box-shadow: 0px 0px 35px 15px #4cc9f0;
+  }
 }
 
 @keyframes float {
@@ -146,6 +158,7 @@ a {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+  transition: all 0.3s ease;
 }
 
 .categoryList div {
@@ -195,7 +208,7 @@ a {
 
 .bestProducts {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 1rem;
 }
@@ -220,6 +233,9 @@ a {
   height: auto;
   border-radius: 8px;
   margin-bottom: 1rem;
+}
+.fifth-div {
+  background-color: #f1f1f1;
 }
 
 .special-offers {
@@ -250,7 +266,7 @@ a {
 }
 
 .services .service {
-  width: 200px;
+  width: 250px;
   max-width: 250px;
   padding: 1.5rem;
   background: white;
@@ -264,7 +280,7 @@ a {
 }
 
 .services img {
-  width: 80px;
+  width: 100px;
   margin-bottom: 1rem;
 }
 
@@ -273,12 +289,16 @@ a {
   margin: 0.5rem 0;
 }
 
+.fourth-div {
+  background-color: #f1f1f1;
+}
+
 .review-slider {
   display: flex;
   overflow-x: auto;
   padding: 1rem;
-  justify-content: flex-start;
-  align-items: stretch;
+  justify-content: space-around;
+  align-items: center;
   flex-wrap: nowrap;
 }
 
@@ -314,6 +334,7 @@ a {
 .promo-code {
   font-weight: bold;
   color: #f72585;
+  font-size: 20px;
 }
 
 .glow-effect {
@@ -321,7 +342,11 @@ a {
   border-radius: 10px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 768px) {
+  #upper-div {
+    padding-top: 80px;
+  }
+
   .upper-inner-div {
     flex-direction: column;
     align-items: center;
@@ -334,68 +359,25 @@ a {
   }
 
   #typed-text {
-    width: 100%;
-    font-size: 3rem;
-  }
-
-  .main-img img {
-    max-width: 400px;
-  }
-}
-
-@media (max-width: 992px) {
-  .bestProducts .items {
-    width: 48%;
-  }
-
-  .category-card {
-    width: 45%;
-  }
-}
-
-@media (max-width: 768px) {
-  #upper-div {
-    padding-top: 80px;
-  }
-
-  #typed-text {
     font-size: 2.5rem;
     min-height: 100px;
-  }
-
-  .main-img img {
-    max-width: 300px;
-  }
-
-  .category-card {
     width: 100%;
-  }
-
-  .services .service {
-    width: 45%;
-  }
-
-  .upper-btns {
-    flex-direction: column;
-  }
-}
-
-@media (max-width: 576px) {
-  .bestProducts .items {
-    width: 100%;
-  }
-
-  #typed-text {
-    font-size: 2rem;
-    min-height: 80px;
   }
 
   .main-img img {
     max-width: 250px;
   }
 
+  .bestProducts .items {
+    width: 100%;
+  }
+
   .primary-btn {
     margin-bottom: 1rem;
+  }
+
+  .category-card {
+    width: 100%;
   }
 
   .services .service {
@@ -404,6 +386,10 @@ a {
 
   .special-offers img {
     max-width: 100%;
+  }
+
+  .upper-btns {
+    flex-direction: column;
   }
 
   .review-slider {

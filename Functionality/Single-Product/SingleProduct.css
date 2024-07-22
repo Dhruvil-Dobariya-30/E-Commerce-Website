@@ -113,25 +113,16 @@ body {
   transform: translateY(-3px);
 }
 
-@media (max-width: 992px) {
-  .product-content {
-    flex-direction: column;
-    max-width: 600px;
-  }
-
-  .imgDiv,
-  .infoDiv {
-    width: 100%;
-  }
-}
-
 @media (max-width: 768px) {
   .container {
     padding: 10px;
   }
 
   .product-content {
+    flex-direction: column;
+    /* max-width: 600px; */
     max-width: 100%;
+    position: relative;
   }
 
   .card-name {
@@ -140,12 +131,12 @@ body {
 
   .card-price {
     font-size: 1.5rem;
+    margin-bottom: 40px;
   }
-}
 
-@media (max-width: 576px) {
   .imgDiv,
   .infoDiv {
+    width: 100%;
     padding: 20px;
   }
 
@@ -153,19 +144,15 @@ body {
     margin-right: 35px;
   }
 
-  .btn {
-    margin: auto;
-  }
-
-  .card-name {
-    font-size: 1.8rem;
-  }
-
   .card-description {
     font-size: 0.9rem;
+    padding-right: 10px;
   }
 
-  .card-price {
-    font-size: 1.3rem;
+  .btn {
+    margin: auto;
+    position: absolute;
+    left: 20px;
+    bottom: 15px;
   }
 }

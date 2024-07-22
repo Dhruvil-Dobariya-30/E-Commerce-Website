@@ -97,7 +97,7 @@ function loadMore() {
 function manageFilter(id, options) {
   return `
     <div>
-      <label for="${id}">${id} : </label>
+      <label for="${id}">${id}</label>
       <select id="${id}">
         ${options
           .map((option) => `<option value="${option}">${option}</option>`)

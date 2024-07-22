@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   let footerContainer = document.getElementById("footer");
 
-  let footerHTML = `
+  let footer = `
     <footer class="footer">
       <div class="footer-content">
         <div class="footer-section">
@@ -15,9 +15,9 @@ document.addEventListener("DOMContentLoaded", function () {
         <div class="footer-section">
           <h3>Customer Service</h3>
           <ul>
+          <li><a href="../../Functionality/Shipping-Page/Shipping-Page.html">Shipping Information</a></li>
             <li><a href="#">Contact Us</a></li>
             <li><a href="#">FAQ</a></li>
-            <li><a href="#">Shipping Information</a></li>
           </ul>
         </div>
         <div class="footer-section">
@@ -30,10 +30,10 @@ document.addEventListener("DOMContentLoaded", function () {
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; ${new Date().getFullYear()} Shoe-2024. All rights reserved.</p>
+        <p>&copy; ${new Date().getFullYear()} FootSteps. All rights reserved.</p>
       </div>
     </footer>
   `;
 
-  footerContainer.innerHTML = footerHTML;
+  footerContainer.innerHTML = footer;
 });

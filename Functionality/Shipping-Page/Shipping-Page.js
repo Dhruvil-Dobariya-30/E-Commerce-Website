@@ -1,5 +1,6 @@
 let cartItems = JSON.parse(localStorage.getItem("cart")) || [];
-let discountPercentage = parseFloat(localStorage.getItem("discountPercentage")) || 0;
+let discountPercentage =
+  parseFloat(localStorage.getItem("discountPercentage")) || 0;
 
 function displayOrderDetails() {
   let orderItemsContainer = document.getElementById("order-items");
@@ -8,14 +9,14 @@ function displayOrderDetails() {
   let totalElement = document.getElementById("total");
   let itemCountElement = document.getElementById("item-count");
 
-  let orderHTML = "";
+  let order = "";
   let subtotal = 0;
   let totalItems = 0;
 
-  cartItems.forEach(item => {
-      subtotal += item.price * item.quantity;
-      totalItems += item.quantity;
-      orderHTML += `
+  cartItems.forEach((item) => {
+    subtotal += item.price * item.quantity;
+    totalItems += item.quantity;
+    order += `
           <tr>
               <td>${item.name}</td>
               <td>${item.quantity}</td>
@@ -24,8 +25,10 @@ function displayOrderDetails() {
       `;
   });
 
-  orderItemsContainer.innerHTML = orderHTML;
-  itemCountElement.textContent = `${totalItems} item${totalItems !== 1 ? 's' : ''} in your order`;
+  orderItemsContainer.innerHTML = order;
+  itemCountElement.textContent = `${totalItems} item${
+    totalItems !== 1 ? "s" : ""
+  } in your order`;
 
   let discount = subtotal * discountPercentage;
   let total = subtotal - discount;
@@ -35,28 +38,31 @@ function displayOrderDetails() {
   totalElement.textContent = `₹${total.toFixed(2)}`;
 }
 function displayDeliveryInfo() {
-    let estimatedDeliveryElement = document.getElementById("estimated-delivery");
-    let deliveryAddressElement = document.getElementById("delivery-address");
+  let estimatedDeliveryElement = document.getElementById("estimated-delivery");
+  let deliveryAddressElement = document.getElementById("delivery-address");
 
-    let deliveryDate = new Date();
-    deliveryDate.setDate(deliveryDate.getDate() + 5);
-    
-    estimatedDeliveryElement.textContent = deliveryDate.toDateString();
-    deliveryAddressElement.textContent = localStorage.getItem("deliveryAddress") || "No address provided";
+  let deliveryDate = new Date();
+  deliveryDate.setDate(deliveryDate.getDate() + 5);
+
+  estimatedDeliveryElement.textContent = deliveryDate.toDateString();
+  deliveryAddressElement.textContent =
+    localStorage.getItem("deliveryAddress") || "No address provided";
 }
 
 function cancelOrder() {
-    if (confirm("Are you sure you want to cancel this order?")) {
-        localStorage.removeItem("cart");
-        localStorage.removeItem("discountPercentage");
-        localStorage.removeItem("deliveryAddress");
-        alert("Order cancelled successfully!");
-        window.location.href = "../../index.html";
-    }
+  if (confirm("Are you sure you want to cancel this order?")) {
+    localStorage.removeItem("cart");
+    localStorage.removeItem("discountPercentage");
+    localStorage.removeItem("deliveryAddress");
+    alert("Order cancelled successfully!");
+    window.location.href = "../../index.html";
+  }
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    displayOrderDetails();
-    displayDeliveryInfo();
-    document.getElementById("cancel-order").addEventListener("click", cancelOrder);
+  displayOrderDetails();
+  displayDeliveryInfo();
+  document
+    .getElementById("cancel-order")
+    .addEventListener("click", cancelOrder);
 });

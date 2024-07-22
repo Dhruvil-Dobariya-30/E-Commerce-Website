@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap");
 
+
+
 body {
   font-family: "Mukta", serif;
   background-color: #f8f9fa;
@@ -199,56 +201,6 @@ button:hover {
   background-color: #3a0ca3;
 }
 
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  animation: fadeIn 0.3s;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-.modal-content {
-  background-color: #fefefe;
-  margin: 15% auto;
-  padding: 40px;
-  border: 1px solid #888;
-  width: 90%;
-  max-width: 300px;
-  text-align: center;
-  border-radius: 10px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-}
-
-.checkmark {
-  color: #4cc9f0;
-  font-size: 50px;
-  line-height: 1;
-  margin-bottom: 20px;
-}
-
-.modal-content h2 {
-  color: #3a0ca3;
-  margin: 0 0 10px 0;
-}
-
-.modal-content p {
-  color: #666;
-  margin: 0;
-}
-
 .mobile-label {
   display: none;
   font-weight: bold;
@@ -267,7 +219,7 @@ button:hover {
 }
 
 #delivery-address {
-  width: 100%;
+  width: 90%;
   padding: 10px;
   border: 1px solid #e0e0e0;
   border-radius: 5px;
