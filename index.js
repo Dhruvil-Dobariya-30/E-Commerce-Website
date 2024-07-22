@@ -3,7 +3,11 @@ let bestProductsDiv = document.querySelector(".bestProducts");
 
 // Typed.js Library used for text animation.
 new Typed("#typed-text", {
-  strings: ["Discover Your Style", "Step into Comfort", "Experience the Best"],
+  strings: [
+    "Discover Your <span>Style</span>",
+    "Step into <span>Comfort</span>",
+    "Experience the <span>Best</span>",
+  ],
   typeSpeed: 70,
   backSpeed: 25,
   loop: true,

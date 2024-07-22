@@ -28,7 +28,9 @@ body {
   position: relative;
   overflow: hidden;
   transition: ease 0.5s;
+  
 }
+
 
 @keyframes gradient {
   0% {
@@ -64,6 +66,11 @@ body {
   margin-bottom: 3rem;
 }
 
+span {
+  color: #f72585;
+  text-shadow: 1px 1px 15px #fff;
+}
+
 .small-data {
   font-size: 1.2rem;
   max-width: 600px;
@@ -85,7 +92,7 @@ body {
 
 @keyframes glow {
   to {
-    box-shadow: 0px 0px 35px 15px #4cc9f0;
+    box-shadow: 0px 0px 35px 25px #4cc9f0;
   }
 }
 
